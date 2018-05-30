@@ -1,0 +1,24 @@
+button,
+div,
+form,
+input {
+  margin: 2px;
+}
+
+html, body{
+  margin:0;
+  height:100%;
+}
+
+#gifs-here{
+    width:65%;
+    float:left;
+}
+
+.gifs{
+  float:left;
+}
+
+#topic-form{
+  float:left;
+}
