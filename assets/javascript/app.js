@@ -79,11 +79,13 @@ function renderButtons() {
     event.preventDefault();
     var newTopic = $("#topic-input").val().trim();
     
-    topic.push(newTopic);
+    
     if (newTopic === ""){
       alert("Enter a game first!");
+      return;
     }
     else{
+    topic.push(newTopic);
     renderButtons();
     }
   });
