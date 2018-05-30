@@ -35,7 +35,7 @@ function displayGif() {
 
             topicImage.attr("data-state", "still");
 
-            topicImage.attr("data-state", "animate");
+            /* topicImage.attr("data-state", "animate"); */
            
             topicDiv.append(topicImage);
 
