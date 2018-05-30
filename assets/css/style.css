@@ -10,9 +10,15 @@ html, body{
   height:100%;
 }
 
+#buttons-view{
+  background-color:lightgray;
+}
+
 #gifs-here{
-    width:65%;
-    float:left;
+  background-color: lightgray;
+  width:65%;
+  padding:15px;
+  float:left;
 }
 
 .gifs{
@@ -20,5 +26,7 @@ html, body{
 }
 
 #topic-form{
+  background-color:lightgray;
+  padding:10px;
   float:left;
 }

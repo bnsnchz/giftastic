@@ -27,11 +27,11 @@ function displayGif() {
 
             topicImage.addClass("gif");
 
-            topicImage.attr("src", results[i].images.fixed_height_small_still.url);
+            topicImage.attr("src", results[i].images.fixed_height_still.url);
 
-            topicImage.attr("data-still", results[i].images.fixed_height_small_still.url);
+            topicImage.attr("data-still", results[i].images.fixed_height_still.url);
             
-            topicImage.attr("data-animate", results[i].images.fixed_height_small.url);
+            topicImage.attr("data-animate", results[i].images.fixed_height.url);
 
             topicImage.attr("data-state", "still");
 
@@ -80,9 +80,15 @@ function renderButtons() {
     var newTopic = $("#topic-input").val().trim();
     
     topic.push(newTopic);
-
+    if (newTopic === ""){
+      alert("Enter a game first!");
+    }
+    else{
     renderButtons();
+    }
   });
+
+
 
   $(document).on("click", ".topic-btn", displayGif);
 
